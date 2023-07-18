@@ -2,12 +2,10 @@ plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
-//    id 'com.github.dcendents.android-maven'
 }
-//apply plugin: 'com.github.dcendents.android-maven'
 
 android {
-    namespace 'kz.airbapay.mylibrary'
+    namespace 'kz.witerius.mylibrary'
     compileSdk 33
 
     defaultConfig {
@@ -38,9 +36,6 @@ android {
 
 dependencies {
 
-    implementation 'com.github.dcendents:android-maven-gradle-plugin:2.0'
-
-
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
@@ -57,7 +52,7 @@ afterEvaluate {
                 // Applies the component for the release build variant.
                 from components.release
                 // You can then customize attributes of the publication as shown below.
-                groupId = 'com.witerius'
+                groupId = 'kz.witerius'
                 artifactId = 'witTestLibrary'
                 version = '1.0.6'
             }
