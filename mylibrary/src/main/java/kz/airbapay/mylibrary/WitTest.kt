@@ -1,4 +1,4 @@
-package kz.airbapay.myapplication3
+package kz.airbapay.mylibrary
 
 import android.util.Log
 
